@@ -1,0 +1,72 @@
+.thumbnail-big {
+  width: 19.5rem;
+  cursor: pointer;
+  margin: 2rem 1rem;
+}
+
+.thumbnail-big .preview {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.thumbnail-big .title {
+  font-weight: 500;
+  color: #0f0f0f;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.2rem;
+}
+
+.thumbnail-big .video-info {
+  display: flex;
+}
+
+.thumbnail-big .video-info>img {
+  border-radius: 50px;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.8rem;
+}
+
+.video-info p {
+  color: rgb(96, 96, 96);
+  margin-bottom: 0;
+}
+
+.small-icon-button {
+  scale: 0.8;
+  padding: 0;
+}
+
+.thumbnail-small {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.thumbnail-small .preview {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.thumbnail-small .video-info {
+  margin-left: 0.3rem;
+}
+
+.thumbnail-small .title {
+  font-weight: 500;
+  color: #0f0f0f;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.2rem;
+}

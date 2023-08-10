@@ -1,0 +1,21 @@
+mat-list-item {
+  display: flex;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  font-weight: 400;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.10);
+  font-weight: 500;
+}
+
+.section-header {
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 0 24px;
+}

@@ -1,0 +1,12 @@
+<mat-list role="list">
+  <ng-container *ngFor="let section of config">
+    <h4 class="section-header">{{section.name}}</h4>
+    <mat-list-item role="listitem" *ngFor="let item of section.items">
+      <button mat-button [ngClass]="{'active': activeUrl === item.path}" >
+        <mat-icon [ngClass]="{'material-icons-outlined': activeUrl !== item.path}" svgIcon="{{item.svg}}">{{item.icon}}</mat-icon>
+        {{item.name}}
+      </button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-list>

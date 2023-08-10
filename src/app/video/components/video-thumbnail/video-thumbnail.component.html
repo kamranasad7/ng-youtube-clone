@@ -1,0 +1,27 @@
+<div *ngIf="!horizontal" class="thumbnail-big" (click)="redirectToVideo()">
+  <img class="preview"
+    [src]="video.thumbnail"
+    alt=""
+  >
+  <div class="video-info">
+    <img [src]="video.channelImg" alt="">
+    <div>
+      <h3 class="title">{{video.title}}</h3>
+      <p>{{video.channel}}</p>
+      <p>{{video.views}} views &bull; {{video.date}}</p>
+    </div>
+    <button class="small-icon-button" mat-icon-button><mat-icon>more_vert</mat-icon></button>
+  </div>
+</div>
+
+<div *ngIf="horizontal" class="thumbnail-small" (click)="redirectToVideo()">
+  <img class="preview"
+    [src]="video.thumbnail"
+    alt=""
+  >
+  <div class="video-info">
+    <h3 class="title">{{video.title}}</h3>
+    <p>{{video.channel}}</p>
+    <p>{{video.views}} views &bull; {{video.date}}</p>
+  </div>
+</div>
