@@ -5,7 +5,7 @@ mat-list-item {
 button {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   font-weight: 400;
 }
 

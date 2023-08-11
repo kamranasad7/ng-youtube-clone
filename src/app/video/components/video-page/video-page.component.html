@@ -1,6 +1,8 @@
 <div class="video-page-layout">
-  <div *ngIf="video">
-    <iframe width="1280" height="720" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div *ngIf="video" style="flex: 2.5; width: 100%;">
+    <div class="embed-container">
+      <iframe class="embedded-video" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <h3 class="title">{{video.title}}</h3>
     <div class="video-info">
       <div class="channel-info">
@@ -63,7 +65,7 @@
 
   </div>
   
-  <div class="suggestions">
+  <div class="suggestions"  style="flex: 1">
     <app-video-thumbnail  *ngFor="let v of videos"  [video]="v" [horizontal]="true"></app-video-thumbnail>
     <app-video-thumbnail  *ngFor="let v of videos"  [video]="v" [horizontal]="true"></app-video-thumbnail>
     <app-video-thumbnail  *ngFor="let v of videos"  [video]="v" [horizontal]="true"></app-video-thumbnail>

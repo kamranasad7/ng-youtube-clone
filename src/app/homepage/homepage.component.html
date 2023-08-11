@@ -9,7 +9,7 @@
     <mat-chip-option>Machines</mat-chip-option>
     <mat-chip-option>Live</mat-chip-option>
   </mat-chip-listbox>
-  
+<!--   
   <mat-grid-list cols="5">
     <mat-grid-tile  *ngFor="let video of videos">
       <app-video-thumbnail [video]="video"></app-video-thumbnail>
@@ -23,5 +23,13 @@
     <mat-grid-tile  *ngFor="let video of videos">
       <app-video-thumbnail [video]="video"></app-video-thumbnail>
     </mat-grid-tile>
-  </mat-grid-list>
+  </mat-grid-list> -->
+
+  <div class="video-grid">
+    <app-video-thumbnail class="thumbnail" *ngFor="let video of videos" [video]="video"></app-video-thumbnail>
+    <app-video-thumbnail class="thumbnail" *ngFor="let video of videos" [video]="video"></app-video-thumbnail>
+    <app-video-thumbnail class="thumbnail" *ngFor="let video of videos" [video]="video"></app-video-thumbnail>
+    <app-video-thumbnail class="thumbnail" *ngFor="let video of videos" [video]="video"></app-video-thumbnail>
+    <app-video-thumbnail class="thumbnail" *ngFor="let video of videos" [video]="video"></app-video-thumbnail>
+  </div>
 </div>

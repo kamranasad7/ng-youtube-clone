@@ -1,8 +1,9 @@
 .video-page-layout {
   background-color: white;
-  padding: 0 7rem;
+  padding: 0 4vw;
   display: flex;
   min-height: 100%;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -14,6 +15,7 @@
 .video-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .channel-info {
@@ -107,5 +109,21 @@
 
 .suggestions {
   padding: 0 1rem;
-  overflow: auto;
+}
+
+.embedded-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
 }

@@ -3,3 +3,14 @@
   background-color: white;
   padding: 10px 24px;
 }
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+
+.thumbnail {
+  flex: 1;
+}
