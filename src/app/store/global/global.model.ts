@@ -1,3 +1,4 @@
 export interface Global {
-  navOpen: boolean
+  navOpen: boolean,
+  locale: string,
 }

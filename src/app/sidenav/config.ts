@@ -3,17 +3,17 @@ export const navConfig = [
     name: "",
     items: [
       {
-        name: 'Home',
+        name: '#SidebarHome',
         icon: 'home',
         path: '/',
       },
       {
-        name: 'Shorts',
+        name: '#SidebarShorts',
         icon: 'shorts-logo',
         svg: 'shorts-logo'
       },
       {
-        name: 'Subscriptions',
+        name: '#SidebarSubscriptions',
         icon: 'subscriptions'
       },
     ]
@@ -22,36 +22,36 @@ export const navConfig = [
     name: "",
     items: [
       {
-        name: 'Library',
+        name: '#SidebarLibrary',
         icon: 'video_library'
       },
       {
-        name: 'History',
+        name: '#SidebarHistory',
         icon: 'history'
       },
     ]
   },
   {
-    name: "Explore",
+    name: "#SidebarExplore",
     items: [
       {
-        name: 'Trending',
+        name: '#SidebarTrending',
         icon: 'local_fire_department'
       },
       {
-        name: 'Music',
+        name: '#SidebarMusic',
         icon: 'history'
       },
       {
-        name: 'Gaming',
+        name: '#SidebarGaming',
         icon: 'sports_esports'
       },
       {
-        name: 'News',
+        name: '#SidebarNews',
         icon: 'newsmode'
       },
       {
-        name: 'Sports',
+        name: '#SidebarSports',
         icon: 'trophy'
       },
     ]
@@ -60,7 +60,7 @@ export const navConfig = [
     name: "",
     items: [
       {
-        name: "Browse channels",
+        name: "#SidebarChannels",
         icon: "add_circle"
       }
     ]
@@ -69,19 +69,19 @@ export const navConfig = [
     name: "",
     items: [
       {
-        name: 'Settings',
+        name: '#SidebarSettings',
         icon: 'settings'
       },
       {
-        name: 'Report History',
+        name: '#SidebarReportHistory',
         icon: 'flag'
       },
       {
-        name: 'Help',
+        name: '#SidebarHelp',
         icon: 'help'
       },
       {
-        name: 'Send Feedback',
+        name: '#SidebarFeedback',
         icon: 'feedback'
       },
     ]

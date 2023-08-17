@@ -8,13 +8,14 @@ import { videos } from '../video/dummyVideos';
 import { Store } from '@ngrx/store';
 import { State } from '../store/global/state';
 import { openNav } from '../store/global/global.actions';
+import { LocalizeDirective } from '../localization/localize.directive';
 
 @Component({
   standalone: true,
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css'],
-  imports: [CommonModule, MatChipsModule, MatGridListModule, VideoThumbnailComponent],
+  imports: [CommonModule, MatChipsModule, MatGridListModule, VideoThumbnailComponent, LocalizeDirective],
 })
 export class HomepageComponent {
   videos: Video[] = videos;

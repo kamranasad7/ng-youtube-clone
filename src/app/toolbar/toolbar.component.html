@@ -8,44 +8,55 @@
 
   <div class="spacer"></div>
 
-  <button mat-icon-button matTooltip="Settings" [matMenuTriggerFor]="menu">
+  <button mat-icon-button matTooltip="Settings" [matMenuTriggerFor]="moreMenu">
     <mat-icon>more_vert</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
+  <mat-menu #moreMenu="matMenu">
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">admin_panel_settings</mat-icon>
-      Your Data in Youtube
+      <span localize="#YourDataInYT"></span>
     </button>
     <mat-divider></mat-divider>
-    <button mat-menu-item>
+    <button mat-menu-item [matMenuTriggerFor]="langMenu">
       <mat-icon class="material-icons-outlined">translate</mat-icon>
-      Language: English
+      <span localize="#MenuLanguageText"></span>
+      <mat-menu #langMenu="matMenu">
+        <button mat-menu-item (click)="english()">
+          <mat-icon class="material-icons-outlined">admin_panel_settings</mat-icon>
+          English
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)="spanish()">
+          <mat-icon class="material-icons-outlined">translate</mat-icon>
+          Spanish
+        </button>
+      </mat-menu>
     </button>
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">language</mat-icon>
-      Location: Pakistan
+      <span localize="#MenuLocationText"></span>
     </button>
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">keyboard</mat-icon>
-      Keyboard Shortcuts
+      <span localize="#MenuKBShortcuts"></span>
     </button>
     <mat-divider></mat-divider>
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">settings</mat-icon>
-      Settings
+      <span localize="#MenuSettings"></span>
     </button>
     <mat-divider></mat-divider>
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">help_outline</mat-icon>
-      Help
+      <span localize="#MenuHelp"></span>
     </button>
     <button mat-menu-item>
       <mat-icon class="material-icons-outlined">feedback</mat-icon>
-      Send Feedback
+      <span localize="#MenuFeedback"></span>
     </button>
   </mat-menu>
   <button mat-button color="accent" class="signin-btn">
     <mat-icon class="material-icons-outlined">account_circle</mat-icon>
-    <span>Sign In</span>
+    <span localize="#SignInButton"></span>
   </button>
 </mat-toolbar>
